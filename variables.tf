@@ -34,6 +34,12 @@ variable "max_image_count" {
   default     = 500
 }
 
+variable "max_untagged_image_count" {
+  type        = number
+  description = "How many untagged Image versions AWS ECR will store"
+  default     = 1
+}
+
 variable "image_names" {
   type        = list(string)
   default     = []

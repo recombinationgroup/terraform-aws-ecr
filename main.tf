@@ -37,7 +37,7 @@ locals {
     selection = {
       tagStatus   = "untagged"
       countType   = "imageCountMoreThan"
-      countNumber = 1
+      countNumber = var.max_untagged_image_count
     }
     action = {
       type = "expire"
